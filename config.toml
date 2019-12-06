@@ -1,0 +1,5 @@
+baseURL = "https://yeeitsjulia.github.io/orcasm"
+languageCode = "en-us"
+title = "for the love of orcas"
+theme = "cactus-plus"
+publishDir = "docs"
