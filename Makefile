@@ -37,7 +37,7 @@ generate:
 .PHONY: deploy
 deploy:
 	@echo "deploy generated static site"
-	@cd $(BASEDIR)/$(OUTPUTDIR)
-	git add -A
-	git ci -m "deploy updated site"
-	git push git@github.com-yeeitsjulia:yeeitsjulia/$(PROJECTNAME).git $(PUBLISHBRANCH)
+	@cd $(BASEDIR)/$(OUTPUTDIR) && \
+	git add -A && \
+	git ci -m "deploy updated site" && \
+	git push origin $(PUBLISHBRANCH)
