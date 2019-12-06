@@ -10,7 +10,7 @@ publish: clean get_public generate
 .PHONY: serve
 serve:
 	@echo "serve site locally"
-	hugo server -D
+	hugo server -D -p 1314
 
 .PHONY: commit
 commit:
